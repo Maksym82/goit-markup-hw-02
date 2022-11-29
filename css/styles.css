@@ -8,7 +8,7 @@
     --background-dark-color:#2F303A;
     --white-color:#FFFFFF;
     --white-footer-color:rgba(255, 255, 255, 0.6);
-
+    --button-active-blue: #188CE8;
 }
 
 .body {
@@ -62,6 +62,10 @@
     color: var(--logo-header-footer-color);
 }
 
+.header-nav .link.current {
+    color: var(--logo-header-footer-color);
+}
+
 .header-contacts {
     color: var(--second-text-color);
     text-decoration: none;
@@ -94,7 +98,6 @@
 
 .hero-title {
     color: var(--white-color);
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -115,6 +118,11 @@
     letter-spacing: 0.06em;
     cursor: pointer;
     }
+
+.button:hover,  
+.button:focus {
+    background-color: var(--button-active-blue);
+}   
 
 .visually-hidden {
     position: absolute;
@@ -140,12 +148,8 @@
 
 .feature-paragraph {
     color: var(--second-text-color);
-    font-family: 'Roboto',sans-serif;
-     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .section-title {
@@ -222,3 +226,41 @@
 .second-link:focus {
     color: var(--logo-header-footer-color);
 }
+
+.button-filter {
+    background-color:var(--background-light-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+    background-color: var(--logo-header-footer-color); 
+    color: var(--white-color);
+
+}   
+.link {
+    text-decoration: none;
+}
+
+.portfolio-title {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-paragraph {
+    color: var(--second-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    }
